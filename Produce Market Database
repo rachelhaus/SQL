@@ -1,0 +1,26 @@
+
+CREATE TABLE rachels_produce_market (id integer primary key, name text, price integer, cost integer, kind text);
+
+INSERT INTO rachels_produce_market VALUES (1,"apples",2.00,1.00,"fruit");
+INSERT INTO rachels_produce_market VALUES (2,"carrots",3.00,1.99,"vegetables");
+INSERT INTO rachels_produce_market VALUES (3, "radicchio",4.99,2.00,"vegetables");
+INSERT INTO rachels_produce_market VALUES (4, "salmon",14.99,5.00,"fish");
+INSERT INTO rachels_produce_market VALUES (5, "romaine_lettuce", 3.99,1.99,"vegetables");
+INSERT INTO rachels_produce_market VALUES (6, "eggs",6.99,4.99,"eggs & dairy");
+INSERT INTO rachels_produce_market VALUES (7, "leeks",3.99,2.00,"vegetables");
+INSERT INTO rachels_produce_market VALUES (8, "parmesan",6.99,3.99,"eggs & dairy");
+INSERT INTO rachels_produce_market VALUES (9, "beets",3.99,1.99,"vegetables");
+INSERT INTO rachels_produce_market VALUES (10, "onions",2.99,1.00,"vegetables");
+INSERT INTO rachels_produce_market VALUES (11, "shallots",3.99,1.99,"vegetables");
+INSERT INTO rachels_produce_market VALUES (12, "pasta",4.99,2.00, "pantry");
+INSERT INTO rachels_produce_market VALUES (13,"mushrooms",3.99,1.00, "vegetables");
+INSERT INTO rachels_produce_market VALUES (14,"rosemary",2.99,.99,"herbs");
+INSERT INTO rachels_produce_market VALUES (15,"thyme",1.99,.99,"herbs");
+
+SELECT * from rachels_produce_market order by price;
+SELECT kind, COUNT(kind) FROM rachels_produce_market group by kind;
+
+
+
+
+
